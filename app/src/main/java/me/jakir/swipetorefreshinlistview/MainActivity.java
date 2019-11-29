@@ -1,14 +1,16 @@
 package me.jakir.swipetorefreshinlistview;
 
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import java.util.ArrayList;
 
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         rainbowColors.add("Red");
         rainbowColors.add("Orange");
         rainbowColors.add("Yellow");
+        rainbowColors.add("Blue");
 
         // build adapter
         mAdapter = new ArrayAdapter<String>(this, R.layout.list_item, rainbowColors);
